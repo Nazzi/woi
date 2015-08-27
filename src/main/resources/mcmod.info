@@ -1,16 +1,22 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
+  "modid": "WOI",
+  "name": "World of Irregulars",
+  "description": "Make items that you never before thought possible!",
+  "version": "${mod_version}",
+  "mcversion": "${minecraft_version}",
+  "url": "http://nazzimods.co.nf",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+  "authorList": [
+    "Nazzi_",
+    "Oakman978"
+  ],
+  "credits": "Nazzi_ and Oakman978",
+  "logoFile": "assets/woi/textures/logo/logo.png",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
 }
 ]
