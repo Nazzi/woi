@@ -20,7 +20,7 @@ public class Names {
 
 		public static final String ALCHEMICAL_BAG = "alchemicalBag";
 		public static final String INGOT = "ingot";
-		public static final String[] INGOT_SUBTYPES = { "Luskium", "Bismuth", "Oshite" };
+		public static final String[] INGOT_SUBTYPES = { "Luskium", "Bismuth", "Oshite", "Adamantine" };
 	}
 
 	public static final class Fluids {
