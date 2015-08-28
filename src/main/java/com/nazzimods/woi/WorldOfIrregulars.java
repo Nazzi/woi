@@ -1,17 +1,19 @@
 package com.nazzimods.woi;
 
+import com.nazzimods.woi.command.CommandWOI;
 import com.nazzimods.woi.handler.ConfigurationHandler;
 import com.nazzimods.woi.handler.CraftingHandler;
 import com.nazzimods.woi.handler.FuelHandler;
 import com.nazzimods.woi.handler.GuiHandler;
+import com.nazzimods.woi.handler.WorldEventHandler;
 import com.nazzimods.woi.init.ModBlocks;
 import com.nazzimods.woi.init.ModItems;
 import com.nazzimods.woi.init.Recipes;
 import com.nazzimods.woi.proxy.IProxy;
 import com.nazzimods.woi.reference.Messages;
-import com.nazzimods.woi.reference.Names.TileEntities;
 import com.nazzimods.woi.reference.Reference;
 import com.nazzimods.woi.util.LogHelper;
+import com.nazzimods.woi.util.SerializationHelper;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -22,6 +24,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLInterModComms;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.event.FMLServerStoppingEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -44,6 +48,15 @@ public class WorldOfIrregulars {
 	}
 
 	@EventHandler
+	public void onServerStarting(FMLServerStartingEvent event) {
+		SerializationHelper.initModDataDirectories();
+
+		// AbilityRegistry.getInstance().loadAbilityRegistryFromFile(Settings.Abilities.onlyLoadFile);
+
+		event.registerServerCommand(new CommandWOI());
+	}
+
+	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 
@@ -60,7 +73,7 @@ public class WorldOfIrregulars {
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
 		// Initialize mod tile entities
-		//TileEntities.init(); *Not needed for now
+		// TileEntities.init(); *Not needed for now
 
 		// Initialize custom rendering and pre-load textures (Client only)
 		proxy.initRenderingAndTextures();
@@ -80,7 +93,13 @@ public class WorldOfIrregulars {
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-	
+
+	}
+
+	@EventHandler
+	public void onServerStopping(FMLServerStoppingEvent event) {
+		WorldEventHandler.hasInitilialized = false;
+
 	}
 
 }

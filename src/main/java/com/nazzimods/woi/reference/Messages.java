@@ -19,4 +19,11 @@ public class Messages {
 		public static final String ABILITIES_ONLY_LOAD_FILE_LABEL = "general.abilities.onlyLoadFile.label";
 		public static final String ABILITIES_ONLY_LOAD_FILE_COMMENT = "general.abilities.onlyLoadFile.comment";
 	}
+	
+	public static final class Commands {
+		
+		private static final String COMMAND_PREFIX = "commands.woi.";
+		
+		 public static final String BASE_COMMAND_USAGE = COMMAND_PREFIX + "usage";
+	}
 }
