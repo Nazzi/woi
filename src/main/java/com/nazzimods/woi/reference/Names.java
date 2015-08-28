@@ -7,13 +7,16 @@ public class Names {
 		public static final String CHALK = "chalkBlock";
 		public static final String ALCHEMY_ARRAY = "alchemyArray";
 		public static final String DUMMY_ARRAY = "dummyArray";
+		//
+		public static final String LUSKIUM_ORE = "oreLuskium";
+
 	}
 
 	public static final class TileEntities {
 
 		private static final String PREFIX = "tile.woi:";
 		private static final String SUFFIX = ".name";
-		
+
 	}
 
 	public static final class Items {
@@ -21,6 +24,8 @@ public class Names {
 		public static final String ALCHEMICAL_BAG = "alchemicalBag";
 		public static final String INGOT = "ingot";
 		public static final String[] INGOT_SUBTYPES = { "Luskium", "Bismuth", "Oshite", "Adamantine", "Runite" };
+		public static final String ORE = "ore";
+		public static final String[] ORE_SUBTYPES = { "Luskium", "Bismuth", "Oshite", "Adamantine", "Runite" };
 	}
 
 	public static final class Fluids {
@@ -88,7 +93,7 @@ public class Names {
 
 		public static final String VANILLA_INVENTORY = "container.inventory";
 		public static final String VANILLA_CRAFTING = "container.crafting";
-		
+
 	}
 
 	public static final class Keys {
