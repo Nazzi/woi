@@ -3,3 +3,6 @@ itemGroup.woi=World of Irregulars
 
 # Items
 item.woi:ingotLuskium.name=Luskium Ingot
+item.woi:ingotBismuth.name=Bismuth
+item.woi:ingotOshite.name=Oshite Ingot
+
