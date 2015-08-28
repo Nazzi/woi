@@ -8,14 +8,13 @@ import net.minecraft.item.Item;
 
 public class CreativeTab {
 
-	public static final CreativeTabs WOI_TAB = new CreativeTabs(Reference.LOWERCASE_MOD_ID)
-    {
-        @Override
-        public Item getTabIconItem()
-        {
-            //return ModItems.stonePhilosophesr;
-        	return null;
-        }
-    };
-	
+	public static final CreativeTabs WOI_TAB = new CreativeTabs(Reference.LOWERCASE_MOD_ID) {
+		@Override
+		public Item getTabIconItem() {
+			// TODO Auto-generated method stub
+			return ModItems.ingot;
+		}
+
+	};
+
 }
