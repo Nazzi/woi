@@ -21,8 +21,8 @@ public class Names {
 		public static final String ALCHEMICAL_BAG = "alchemicalBag";
 		public static final String ALCHEMICAL_DUST = "alchemicalDust";
 		public static final String[] ALCHEMICAL_DUST_SUBTYPES = { "ash", "verdant", "azure", "minium" };
-		public static final String MATTER = "matter";
-		public static final String[] MATTER_SUBTYPES = { "Proto", "Dark", "Corporeal", "Kinetic", "Temporal", "Essentia", "Amorphous", "Void", "Omni" };
+		public static final String INGOT = "ingot";
+		public static final String[] INGOT_SUBTYPES = { "Luskium", "Bismuth" };
 		public static final String GEM = "gem";
 		public static final String[] GEM_SUBTYPES = { "Black", "Blue", "Green", "Grey", "Purple", "Red", "Yellow" };
 	}

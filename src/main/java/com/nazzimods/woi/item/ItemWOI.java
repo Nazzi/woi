@@ -15,7 +15,7 @@ public class ItemWOI extends Item {
     {
         super();
         this.maxStackSize = 1;
-        this.setCreativeTab(CreativeTab.EE3_TAB);
+        this.setCreativeTab(CreativeTab.WOI_TAB);
         this.setNoRepair();
     }
 
