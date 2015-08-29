@@ -8,6 +8,7 @@ import com.nazzimods.woi.handler.GuiHandler;
 import com.nazzimods.woi.handler.WorldEventHandler;
 import com.nazzimods.woi.init.ModBlocks;
 import com.nazzimods.woi.init.ModItems;
+import com.nazzimods.woi.init.OreGeneration;
 import com.nazzimods.woi.init.Recipes;
 import com.nazzimods.woi.proxy.IProxy;
 import com.nazzimods.woi.reference.Messages;
@@ -60,6 +61,8 @@ public class WorldOfIrregulars {
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 
+		OreGeneration.init();
+		
 		proxy.registerKeybindings();
 
 		ModItems.init();
