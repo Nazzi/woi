@@ -9,6 +9,7 @@ public class Names {
 		public static final String DUMMY_ARRAY = "dummyArray";
 		//
 		public static final String LUSKIUM_ORE = "oreLuskium";
+		public static final String ADAMANTINE_ORE = "oreAdamantine";
 
 	}
 
@@ -24,7 +25,6 @@ public class Names {
 		public static final String ALCHEMICAL_BAG = "alchemicalBag";
 		public static final String INGOT = "ingot";
 		public static final String[] INGOT_SUBTYPES = { "Luskium", "Bismuth", "Oshite", "Adamantine", "Runite" };
-		public static final String LUSKIUM_ORE = "oreLuskium";
 	}
 
 	public static final class Fluids {

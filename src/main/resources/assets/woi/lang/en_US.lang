@@ -1,6 +1,10 @@
 #Creative Tabs
 itemGroup.woi=World of Irregulars
 
+# Blocks
+tile.woi:oreLuskium.name=Luskium Ore
+tile.woi:oreAdamantine.name=Adamantine Ore
+
 # Items
 item.woi:ingotLuskium.name=Luskium Ingot
 item.woi:ingotBismuth.name=Bismuth
