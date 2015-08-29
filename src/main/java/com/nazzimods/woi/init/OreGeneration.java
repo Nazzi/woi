@@ -39,6 +39,10 @@ public class OreGeneration implements IWorldGenerator {
 
 	public void generateOverworld(World world, Random random, int x, int z) {
 		generateOre(ModBlocks.oreLuskium, world, random, x, z, 2, 10, 5, 0, 100, Blocks.stone);
+		generateOre(ModBlocks.oreBismuth, world, random, x, z, 2, 10, 5, 0, 100, Blocks.stone);
+		generateOre(ModBlocks.oreAdamantine, world, random, x, z, 2, 10, 5, 0, 100, Blocks.stone);
+		generateOre(ModBlocks.oreRunite, world, random, x, z, 2, 10, 5, 0, 100, Blocks.stone);
+		generateOre(ModBlocks.oreOshite, world, random, x, z, 2, 10, 5, 0, 100, Blocks.stone);
 	}
 
 	public void generateEnd(World world, Random random, int x, int z) {

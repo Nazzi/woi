@@ -26,8 +26,10 @@ public class Names {
 	public static final class Items {
 
 		public static final String ALCHEMICAL_BAG = "alchemicalBag";
-		public static final String INGOT = "ingot";
-		public static final String[] INGOT_SUBTYPES = { "Luskium", "Oshite", "Adamantine", "Runite" };
+		public static final String LUSKIUM_INGOT = "ingotLuskium";
+		public static final String ADAMANTINE_INGOT = "ingotAdamantine";
+		public static final String OSHITE_INGOT = "ingotOshite";
+		public static final String RUNITE_INGOT = "ingotRunite";
 		public static final String BISMUTH = "bismuth";
 	}
 

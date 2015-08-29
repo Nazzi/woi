@@ -25,5 +25,9 @@ public class BlockBismuthOre extends BlockWOI {
 	public Item getItemDropped(int par1, Random random, int par2) {
 		return ModItems.bismuth;
 	}
-	
+
+	@Override
+	public int quantityDropped(Random random) {
+		return 1 + random.nextInt(5);
+	}
 }

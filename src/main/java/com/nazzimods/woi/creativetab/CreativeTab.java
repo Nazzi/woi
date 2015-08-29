@@ -11,7 +11,7 @@ public class CreativeTab {
 	public static final CreativeTabs WOI_TAB = new CreativeTabs(Reference.LOWERCASE_MOD_ID) {
 		@Override
 		public Item getTabIconItem() {
-			return ModItems.ingot;
+			return ModItems.ingotLuskium;
 		}
 
 	};
