@@ -9,9 +9,11 @@ import com.nazzimods.woi.reference.Names;
 public class ModItems {
 
 	public static final ItemWOI ingot = new ItemIngot();
+	public static final ItemWOI bismuth = new ItemBismuth();
 	
 	public static void init() {
 		GameRegistry.registerItem(ingot, Names.Items.INGOT);
+		GameRegistry.registerItem(bismuth, Names.Items.BISMUTH);
 	}
 	
 }

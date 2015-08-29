@@ -12,7 +12,7 @@ public class Names {
 		public static final String ADAMANTINE_ORE = "oreAdamantine";
 		public static final String OSHITE_ORE = "oreOshite";
 		public static final String RUNITE_ORE = "oreRunite";
-		public static final String BISMUTH_ORE = "oreAdamantine";
+		public static final String BISMUTH_ORE = "oreBismuth";
 
 	}
 

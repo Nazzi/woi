@@ -9,8 +9,8 @@ tile.woi:oreOshite.name=Oshite Ore
 tile.woi:oreRunite.name=Runite Ore
 
 # Items
+item.woi:bismuth.name=Bismuth
 item.woi:ingotLuskium.name=Luskium Ingot
-item.woi:ingotBismuth.name=Bismuth
 item.woi:ingotOshite.name=Oshite Ingot
 item.woi:ingotAdamantine.name=Adamantine Ingot
 item.woi:ingotRunite.name=Runite Ingot
