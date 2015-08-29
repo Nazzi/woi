@@ -16,8 +16,10 @@ public class Recipes {
 		//Smelting
 		GameRegistry.addSmelting(ModBlocks.oreLuskium, new ItemStack(ModItems.ingotLuskium), 1.0F);
 		GameRegistry.addSmelting(ModBlocks.oreRunite, new ItemStack(ModItems.ingotRunite), 1.0F);
-		System.out.println("Recipes registered");
-		
+		GameRegistry.addSmelting(ModBlocks.oreOshite, new ItemStack(ModItems.ingotOshite), 1.0F);
+		GameRegistry.addSmelting(ModBlocks.oreAdamantine, new ItemStack(ModItems.ingotAdamantine), 1.0F);
+		GameRegistry.addSmelting(ModBlocks.oreBismuth, new ItemStack(ModItems.bismuth), 1.0F);
+
 	}
 	
 }

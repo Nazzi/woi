@@ -3,8 +3,8 @@
   "modid": "WOI",
   "name": "World of Irregulars",
   "description": "Make items that you never before thought possible!",
-  "version": "${mod_version}",
-  "mcversion": "${minecraft_version}",
+  "version": "1.0",
+  "mcversion": "1.7.10",
   "url": "http://nazzimods.co.nf",
   "updateUrl": "",
   "authorList": [
