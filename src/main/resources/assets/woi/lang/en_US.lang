@@ -4,6 +4,9 @@ itemGroup.woi=World of Irregulars
 # Blocks
 tile.woi:oreLuskium.name=Luskium Ore
 tile.woi:oreAdamantine.name=Adamantine Ore
+tile.woi:oreBismuth.name=Bismuth Ore
+tile.woi:oreOshite.name=Oshite Ore
+tile.woi:oreRunite.name=Runite Ore
 
 # Items
 item.woi:ingotLuskium.name=Luskium Ingot
