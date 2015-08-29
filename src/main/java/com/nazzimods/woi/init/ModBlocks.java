@@ -1,6 +1,5 @@
 package com.nazzimods.woi.init;
 
-
 import com.nazzimods.woi.block.BlockWOI;
 import com.nazzimods.woi.block.ore.BlockAdamantineOre;
 import com.nazzimods.woi.block.ore.BlockBismuthOre;

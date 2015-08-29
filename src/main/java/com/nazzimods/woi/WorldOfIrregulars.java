@@ -6,6 +6,7 @@ import com.nazzimods.woi.handler.CraftingHandler;
 import com.nazzimods.woi.handler.FuelHandler;
 import com.nazzimods.woi.handler.GuiHandler;
 import com.nazzimods.woi.handler.WorldEventHandler;
+import com.nazzimods.woi.init.AchievementWOI;
 import com.nazzimods.woi.init.ModBlocks;
 import com.nazzimods.woi.init.ModItems;
 import com.nazzimods.woi.init.OreGeneration;
@@ -16,6 +17,7 @@ import com.nazzimods.woi.reference.Reference;
 import com.nazzimods.woi.util.LogHelper;
 import com.nazzimods.woi.util.SerializationHelper;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -27,6 +29,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.event.FMLServerStoppingEvent;
+import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -62,12 +65,16 @@ public class WorldOfIrregulars {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 
 		OreGeneration.init();
-		
+
 		proxy.registerKeybindings();
 
 		ModItems.init();
 
 		ModBlocks.init();
+
+		AchievementWOI.init();
+		
+		Recipes.init();
 	}
 
 	@EventHandler
@@ -85,13 +92,16 @@ public class WorldOfIrregulars {
 		proxy.registerEventHandlers();
 
 		CraftingHandler.init();
-		Recipes.init();
+
+
 
 		// Register our fuels
 		GameRegistry.registerFuelHandler(new FuelHandler());
 
 		// Register the Waila data provider
 		FMLInterModComms.sendMessage("Waila", "register", "com.pahimar.woi.waila.WailaDataProvider.callbackRegister");
+		FMLCommonHandler.instance().bus().register(new CraftingHandler());
+
 	}
 
 	@EventHandler

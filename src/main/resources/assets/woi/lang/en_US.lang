@@ -1,6 +1,10 @@
 #Creative Tabs
 itemGroup.woi=World of Irregulars
 
+#Achievements
+achievement.smeltLuskium=What's This Pink Shit?
+achievement.smeltLuskium.desc=Smelt some Luskium Ore in to a Luskium Ingot.
+
 # Blocks
 tile.woi:oreLuskium.name=Luskium Ore
 tile.woi:oreAdamantine.name=Adamantine Ore

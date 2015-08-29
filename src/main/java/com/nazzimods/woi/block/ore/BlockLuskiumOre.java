@@ -20,7 +20,7 @@ public class BlockLuskiumOre extends BlockWOI {
 		this.setBlockName(Names.Blocks.LUSKIUM_ORE);
 		this.setHardness(10.0F);
 		this.setStepSound(soundTypeStone);
-		this.setLightLevel(0.1F);
+		
 	}
 
 	@Override
