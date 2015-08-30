@@ -1,8 +1,7 @@
-package com.nazzimods.woi.item.ingots;
+package com.nazzimods.woi.item;
 
 import java.util.List;
 
-import com.nazzimods.woi.item.ItemWOI;
 import com.nazzimods.woi.reference.Names;
 import com.nazzimods.woi.reference.Textures;
 

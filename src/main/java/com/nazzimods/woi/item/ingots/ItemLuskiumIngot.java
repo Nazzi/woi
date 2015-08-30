@@ -1,5 +1,6 @@
 package com.nazzimods.woi.item.ingots;
 
+import com.nazzimods.woi.item.ItemIngot;
 import com.nazzimods.woi.reference.Names;
 
 public class ItemLuskiumIngot extends ItemIngot {
