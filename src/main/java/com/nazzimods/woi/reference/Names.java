@@ -13,7 +13,8 @@ public class Names {
 		public static final String OSHITE_ORE = "oreOshite";
 		public static final String RUNITE_ORE = "oreRunite";
 		public static final String BISMUTH_ORE = "oreBismuth";
-
+		
+		public static final String TEST = "test";
 	}
 
 	public static final class TileEntities {
@@ -31,6 +32,7 @@ public class Names {
 		public static final String OSHITE_INGOT = "ingotOshite";
 		public static final String RUNITE_INGOT = "ingotRunite";
 		public static final String BISMUTH = "bismuth";
+
 	}
 
 	public static final class Fluids {
