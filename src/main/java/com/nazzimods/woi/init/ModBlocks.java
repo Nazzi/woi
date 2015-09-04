@@ -1,6 +1,5 @@
 package com.nazzimods.woi.init;
 
-import com.nazzimods.woi.block.BlockTest;
 import com.nazzimods.woi.block.BlockWOI;
 import com.nazzimods.woi.block.ore.BlockAdamantineOre;
 import com.nazzimods.woi.block.ore.BlockBismuthOre;
@@ -21,15 +20,12 @@ public class ModBlocks {
 	public static final BlockWOI oreOshite = new BlockOshiteOre(null);
 	public static final BlockWOI oreRunite = new BlockRuniteOre(null);
 
-	public static final BlockTest test = new BlockTest(false);
-
 	public static void init() {
 		GameRegistry.registerBlock(oreLuskium, Names.Blocks.LUSKIUM_ORE);
 		GameRegistry.registerBlock(oreAdamantine, Names.Blocks.ADAMANTINE_ORE);
 		GameRegistry.registerBlock(oreBismuth, Names.Blocks.BISMUTH_ORE);
 		GameRegistry.registerBlock(oreOshite, Names.Blocks.OSHITE_ORE);
 		GameRegistry.registerBlock(oreRunite, Names.Blocks.RUNITE_ORE);
-		GameRegistry.registerBlock(test, Names.Blocks.TEST);
 	}
 
 }

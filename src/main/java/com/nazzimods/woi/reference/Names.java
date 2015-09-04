@@ -13,15 +13,16 @@ public class Names {
 		public static final String OSHITE_ORE = "oreOshite";
 		public static final String RUNITE_ORE = "oreRunite";
 		public static final String BISMUTH_ORE = "oreBismuth";
-		
+
 		public static final String TEST = "test";
+	
 	}
 
 	public static final class TileEntities {
 
 		private static final String PREFIX = "tile.woi:";
 		private static final String SUFFIX = ".name";
-
+		public static final String TEST = PREFIX + Blocks.TEST + SUFFIX;;
 	}
 
 	public static final class Items {
