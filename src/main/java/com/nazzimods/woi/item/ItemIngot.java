@@ -19,7 +19,7 @@ public class ItemIngot extends ItemWOI {
 	public ItemIngot() {
 		super();
 		this.setMaxStackSize(64);
-		this.setHasSubtypes(true);
+		this.setHasSubtypes(false);
 	}
 
 	@Override

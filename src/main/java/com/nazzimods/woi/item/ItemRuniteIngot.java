@@ -1,6 +1,5 @@
-package com.nazzimods.woi.item.ingots;
+package com.nazzimods.woi.item;
 
-import com.nazzimods.woi.item.ItemWOI;
 import com.nazzimods.woi.reference.Names;
 
 
