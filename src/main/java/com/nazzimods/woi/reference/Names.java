@@ -34,6 +34,8 @@ public class Names {
 		public static final String RUNITE_INGOT = "ingotRunite";
 		public static final String BISMUTH = "bismuth";
 		
+		public static final String MAGIC_WAND = "wandMagic";
+		
 		public static final String MUNDANE_DUST = "dustMundane";
 
 	}
