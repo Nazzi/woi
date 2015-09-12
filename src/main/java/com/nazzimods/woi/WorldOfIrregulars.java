@@ -29,7 +29,6 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.event.FMLServerStoppingEvent;
-import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -73,7 +72,7 @@ public class WorldOfIrregulars {
 		ModBlocks.init();
 
 		AchievementWOI.init();
-		
+
 		Recipes.init();
 	}
 
@@ -93,15 +92,12 @@ public class WorldOfIrregulars {
 
 		CraftingHandler.init();
 
-
-
 		// Register our fuels
 		GameRegistry.registerFuelHandler(new FuelHandler());
 
 		// Register the Waila data provider
 		FMLInterModComms.sendMessage("Waila", "register", "com.pahimar.woi.waila.WailaDataProvider.callbackRegister");
 		FMLCommonHandler.instance().bus().register(new CraftingHandler());
-
 	}
 
 	@EventHandler
